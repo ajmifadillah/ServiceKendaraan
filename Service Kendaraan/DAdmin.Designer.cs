@@ -308,6 +308,7 @@ namespace Service_Kendaraan
             this.pnlkonten.Name = "pnlkonten";
             this.pnlkonten.Size = new System.Drawing.Size(1724, 955);
             this.pnlkonten.TabIndex = 7;
+            this.pnlkonten.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlkonten_Paint);
             // 
             // label3
             // 

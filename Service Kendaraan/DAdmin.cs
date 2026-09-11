@@ -70,5 +70,10 @@ namespace Service_Kendaraan
             ATransaksi Hal3 = new ATransaksi() { TopLevel = false, TopMost = true };
             KF.UntukFormMenu(Hal3, pnlkonten);
         }
+
+        private void pnlkonten_Paint(object sender, PaintEventArgs e)
+        {
+            //1
+        }
     }
 }
