@@ -64,5 +64,11 @@ namespace Service_Kendaraan
             dashboardadmin Hal3 = new dashboardadmin() { TopLevel = false, TopMost = true };
             KF.UntukFormMenu(Hal3, pnlkonten);
         }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            ATransaksi Hal3 = new ATransaksi() { TopLevel = false, TopMost = true };
+            KF.UntukFormMenu(Hal3, pnlkonten);
+        }
     }
 }

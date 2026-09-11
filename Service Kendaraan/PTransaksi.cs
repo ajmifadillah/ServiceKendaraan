@@ -27,8 +27,10 @@ namespace Service_Kendaraan
                 string np = "" + baris["pelanggan"];
                 string al = "" + baris["kendaraan"];
                 string js = "" + baris["jenis_service"];
-                string by = "" + baris["biaya"];
-                dataGridView1.Rows.Add(idp, nm, np, al, js, by);
+                string jm = "" + baris["jumlah_service"];
+                string by = "" + baris["harga"];
+                string tl = "" + baris["total"];
+                dataGridView1.Rows.Add(idp, nm, np, al, js, jm, by, tl);
             }
         }
         public void bersih()
@@ -36,7 +38,9 @@ namespace Service_Kendaraan
             cmbid.SelectedIndex = -1;
             cmbkendaraan.SelectedIndex = -1;
             cmbservice.SelectedIndex = -1;
+            txtjumlah.Text = "";
             txtbiaya.Text = "";
+            txttotal.Text = "";
         }
         private void guna2ComboBox1_DropDown(object sender, EventArgs e)
         {
@@ -90,16 +94,32 @@ namespace Service_Kendaraan
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            DB.crud($"insert into transaksi values (null,null, '{cmbid.Text}','{cmbkendaraan.Text}','{cmbservice.Text}','{txtbiaya.Text}')");
+            
+            DB.crud($"INSERT INTO transaksi VALUES (null,null," +
+                $"'{cmbid.Text}','{cmbkendaraan.Text}','{cmbservice.Text}'," +
+                $"{txtjumlah.Text},'{txtbiaya.Text}','{txttotal.Text}')");
+
+           
+            DB.crud("SELECT * FROM jenis_service");
+            foreach (DataRow item in DB.ds.Tables[0].Rows)
+            {
+                string ID = item["id_jenis"].ToString();
+                label7.Text = ID;
+
+                DB.crud($"UPDATE jenis_service SET stok = stok - {txtjumlah.Text} WHERE id_jenis = '{ID}'");
+            }
+
             tampildata();
             bersih();
         }
+
+
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int baris = e.RowIndex;
             int kolom = e.ColumnIndex;
-            if (kolom == 6)
+            if (kolom == 8)
             {
                 string idt = dataGridView1.Rows[baris].Cells[0].Value.ToString();
                 DB.crud($"select * from transaksi where no_transaksi = '{idt}'");
@@ -109,15 +129,19 @@ namespace Service_Kendaraan
                     string nm = "" + brs["pelanggan"];
                     string np = "" + brs["kendaraan"];
                     string al = "" + brs["jenis_service"];
-                    string by = "" + brs["biaya"];
+                    string js = "" + brs["jumlah_service"];
+                    string by = "" + brs["harga"];
+                    string tl = "" + brs["total"];
                     label7.Text = idta;
                     cmbid.Text = nm;
                     cmbkendaraan.Text = np;
                     cmbservice.Text = al;
+                    txtjumlah.Text = js;
+                    txttotal.Text = tl;
                     txtbiaya.Text = by;
                 }
             }
-            if (kolom == 7)
+            if (kolom == 9)
             {
                 string idt = dataGridView1.Rows[baris].Cells[0].Value.ToString();
                 DialogResult setuju = MessageBox.Show("Apakah mau dihapus? " + idt, "pemberitahuan,",
@@ -142,10 +166,60 @@ namespace Service_Kendaraan
             string nu = "" + cmbid.Text;
             string un = "" + cmbkendaraan.Text;
             string ps = "" + cmbservice.Text;
+            string js = "" + txtjumlah.Text;
             string by = "" + txtbiaya.Text;
-            DB.crud($"update transaksi SET pelanggan = '{nu}', kendaraan = '{un}', jenis_service = '{ps}',  biaya = '{by}' where no_transaksi = '{label7.Text}'");
+            string tt = "" + txttotal.Text;
+            DB.crud($"update transaksi SET pelanggan = '{nu}', kendaraan = '{un}', jenis_service = '{ps}', jumlah_service = '{js}',  harga = '{by}', total = '{tt}'  where no_transaksi = '{label7.Text}'");
             bersih();
             tampildata();
+        }
+
+        private void txtbiaya_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void harga()
+        {
+            DB.crud($"SELECT * FROM jenis_service WHERE nama_service = '{cmbservice.Text}'");
+            foreach (DataRow baris in DB.ds.Tables[0].Rows)
+            {
+                string harga = baris["harga"].ToString();
+                txtbiaya.Text = harga;
+            }
+
+        }
+        private void cmbservice_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            harga();
+        }
+
+        private void txtjumlah_TextChanged(object sender, EventArgs e)
+        {
+            if (txtjumlah.Text != "" && txtbiaya.Text != "")
+            {
+                int hr = Convert.ToInt32(txtbiaya.Text);
+                int qty = Convert.ToInt32(txtjumlah.Text);
+                int total = hr * qty;
+                txttotal.Text = Convert.ToString(total);  // total harga tiket
+            }
+        }
+
+        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            DB.crud($"select * from transaksi where pelanggan like '%{guna2TextBox4.Text}%'");
+            foreach (DataRow baris in DB.ds.Tables[0].Rows)
+            {
+                string idp = "" + baris["no_transaksi"];
+                string nm = "" + baris["tanggal"];
+                string np = "" + baris["pelanggan"];
+                string al = "" + baris["kendaraan"];
+                string js = "" + baris["jenis_service"];
+                string jm = "" + baris["jumlah_service"];
+                string by = "" + baris["harga"];
+                string tl = "" + baris["total"];
+                dataGridView1.Rows.Add(idp, nm, np, al, js, jm, by, tl);
+            }
         }
     }
 }

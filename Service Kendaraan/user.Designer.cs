@@ -30,7 +30,6 @@ namespace Service_Kendaraan
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.cmbrole = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -59,7 +58,6 @@ namespace Service_Kendaraan
             // guna2Panel1
             // 
             this.guna2Panel1.BorderRadius = 15;
-            this.guna2Panel1.Controls.Add(this.guna2Button3);
             this.guna2Panel1.Controls.Add(this.cmbrole);
             this.guna2Panel1.Controls.Add(this.label7);
             this.guna2Panel1.Controls.Add(this.guna2TextBox4);
@@ -77,22 +75,6 @@ namespace Service_Kendaraan
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1890, 390);
             this.guna2Panel1.TabIndex = 3;
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Noto Sans HK Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(1125, 331);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(174, 45);
-            this.guna2Button3.TabIndex = 28;
-            this.guna2Button3.Text = "Tampildata";
             // 
             // cmbrole
             // 
@@ -290,6 +272,7 @@ namespace Service_Kendaraan
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -303,7 +286,7 @@ namespace Service_Kendaraan
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1584, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(1584, 238);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -346,6 +329,8 @@ namespace Service_Kendaraan
             // Column6
             // 
             this.Column6.HeaderText = "";
+            this.Column6.Image = global::Service_Kendaraan.Properties.Resources.Edit_64px1;
+            this.Column6.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Column6.MinimumWidth = 8;
             this.Column6.Name = "Column6";
             this.Column6.Width = 150;
@@ -353,6 +338,8 @@ namespace Service_Kendaraan
             // Column7
             // 
             this.Column7.HeaderText = "";
+            this.Column7.Image = global::Service_Kendaraan.Properties.Resources.Trash_50px4;
+            this.Column7.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Column7.MinimumWidth = 8;
             this.Column7.Name = "Column7";
             this.Column7.Width = 150;
@@ -398,6 +385,5 @@ namespace Service_Kendaraan
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewImageColumn Column6;
         private System.Windows.Forms.DataGridViewImageColumn Column7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }

@@ -96,5 +96,10 @@ namespace Service_Kendaraan
                 dataGridView1.Rows.Add(idr, nr);
             }
         }
+
+        private void role_Load(object sender, EventArgs e)
+        {
+            tampildata();
+        }
     }
 }

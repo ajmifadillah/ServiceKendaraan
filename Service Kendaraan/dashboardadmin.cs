@@ -79,5 +79,56 @@ namespace Service_Kendaraan
         {
             
         }
+
+        private void guna2ShadowPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Shapes4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Shapes2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Shapes3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void guna2PictureBox4_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            tampildata();
+        }
     }
 }

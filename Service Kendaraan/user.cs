@@ -63,7 +63,7 @@ namespace Service_Kendaraan
 
         private void user_Load(object sender, EventArgs e)
         {
-            
+            tampildata();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

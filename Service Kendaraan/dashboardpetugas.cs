@@ -75,5 +75,15 @@ namespace Service_Kendaraan
             HitungTotalKendaraan();
             HitungTotalTransaksi();
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            tampildata();
+        }
     }
 }

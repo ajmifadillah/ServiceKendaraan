@@ -59,6 +59,12 @@
     <Compile Include="AKendaraan.Designer.cs">
       <DependentUpon>AKendaraan.cs</DependentUpon>
     </Compile>
+    <Compile Include="ATransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ATransaksi.Designer.cs">
+      <DependentUpon>ATransaksi.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </Compile>
     <EmbeddedResource Include="AKendaraan.resx">
       <DependentUpon>AKendaraan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATransaksi.resx">
+      <DependentUpon>ATransaksi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DAdmin.resx">
       <DependentUpon>DAdmin.cs</DependentUpon>
@@ -275,6 +284,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Trash_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chevron Right_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maintenance_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Card Payment_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motorcycle_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User Male_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_64px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_64px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_50px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_50px3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_50px4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

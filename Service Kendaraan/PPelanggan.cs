@@ -111,5 +111,10 @@ namespace Service_Kendaraan
                 dataGridView1.Rows.Add(idp, nm, np, al);
             }
         }
+
+        private void PPelanggan_Load(object sender, EventArgs e)
+        {
+            tampildata();
+        }
     }
 }

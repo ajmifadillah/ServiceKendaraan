@@ -37,3 +37,4 @@ C:\Users\ASUS\OneDrive\Documents\Service Kendaraan\Service Kendaraan\obj\Debug\S
 C:\Users\ASUS\OneDrive\Documents\Service Kendaraan\Service Kendaraan\obj\Debug\Service_Kendaraan.Jenis_Service.resources
 C:\Users\ASUS\OneDrive\Documents\Service Kendaraan\Service Kendaraan\obj\Debug\Service_Kendaraan.dashboardpetugas.resources
 C:\Users\ASUS\OneDrive\Documents\Service Kendaraan\Service Kendaraan\obj\Debug\Service_Kendaraan.dashboardadmin.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan\Service Kendaraan\obj\Debug\Service_Kendaraan.ATransaksi.resources

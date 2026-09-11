@@ -46,8 +46,8 @@ namespace Service_Kendaraan
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.pnlkonten = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -153,7 +153,7 @@ namespace Service_Kendaraan
             this.guna2Button9.Name = "guna2Button9";
             this.guna2Button9.Size = new System.Drawing.Size(193, 45);
             this.guna2Button9.TabIndex = 9;
-            this.guna2Button9.Text = "Role";
+            this.guna2Button9.Text = "🛡️ Role";
             this.guna2Button9.Click += new System.EventHandler(this.guna2Button9_Click);
             // 
             // guna2Button1
@@ -171,7 +171,7 @@ namespace Service_Kendaraan
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(193, 45);
             this.guna2Button1.TabIndex = 8;
-            this.guna2Button1.Text = "User";
+            this.guna2Button1.Text = "👤 User";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // guna2Button8
@@ -225,6 +225,7 @@ namespace Service_Kendaraan
             this.guna2Button6.Size = new System.Drawing.Size(193, 45);
             this.guna2Button6.TabIndex = 5;
             this.guna2Button6.Text = "🧾  Transaksi";
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // guna2Button5
             // 
@@ -308,16 +309,6 @@ namespace Service_Kendaraan
             this.pnlkonten.Size = new System.Drawing.Size(1724, 955);
             this.pnlkonten.TabIndex = 7;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Service_Kendaraan.Properties.Resources.Screenshot_2026_07_31_152458_removebg_preview1;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(194, 88);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -327,6 +318,16 @@ namespace Service_Kendaraan
             this.label3.Size = new System.Drawing.Size(1063, 82);
             this.label3.TabIndex = 1;
             this.label3.Text = "Selamat Datang Admin Service";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Service_Kendaraan.Properties.Resources.Screenshot_2026_07_31_152458_removebg_preview1;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(194, 88);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // DAdmin
             // 
