@@ -12,6 +12,7 @@ namespace Service_Kendaraan
 {
     public partial class Jenis_Service : Form
     {
+        string idjenis = "";
         public Jenis_Service()
         {
             InitializeComponent();
@@ -57,46 +58,48 @@ namespace Service_Kendaraan
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int baris = e.RowIndex;
-            int kolom = e.ColumnIndex;
-            if (kolom == 4)
-            {
-                string idr = dataGridView1.Rows[baris].Cells[0].Value.ToString();
-                DB.crud($"select * from jenis_service where id_jenis = '{idr}'");
-                foreach (DataRow brs in DB.ds.Tables[0].Rows)
-                {
-                    string idro = "" + brs["id_jenis"];
-                    string nr = "" + brs["nama_service"];
-                    string hr = "" + brs["harga"];
-                    string st = "" + brs["stok"];
-                    label5.Text = idro;
-                    txtnama.Text = nr;
-                    txtharga.Text = hr;
-                    txtstok.Text = st;
-                }
-            }
-            if (kolom == 5)
-            {
-                string idr = dataGridView1.Rows[baris].Cells[0].Value.ToString();
-                DialogResult setuju = MessageBox.Show("Apakah mau dihapus? " + idr, "pemberitahuan,",
-              MessageBoxButtons.YesNo,
-              MessageBoxIcon.Question);
-                if (setuju == DialogResult.Yes)
-                {
-                    DB.crud($"delete from jenis_service where id_jenis = '{idr}'");
+            if (e.RowIndex < 0)
+                return;
 
-                }
-                tampildata();
+            int baris = e.RowIndex;
+            idjenis = dataGridView1.Rows[baris].Cells[0].Value?.ToString();
+
+            if (string.IsNullOrEmpty(idjenis))
+                return;
+            DB.crud($"SELECT * FROM jenis_service WHERE id_jenis = '{idjenis}'");
+
+            if (DB.ds.Tables[0].Rows.Count > 0)
+            {
+                DataRow brs = DB.ds.Tables[0].Rows[0];
+
+                label5.Text = brs["id_jenis"].ToString();
+                txtnama.Text = brs["nama_service"].ToString();
+                txtharga.Text = brs["harga"].ToString();
+                txtstok.Text = brs["stok"].ToString();
+
             }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            string nu = "" + txtnama.Text;
-            string un = "" + txtharga.Text;
-            DB.crud($"update jenis_service SET nama_service = '{nu}', harga = '{un}' where id_jenis = '{label5.Text}'");
-            bersih();
+            if (string.IsNullOrEmpty(idjenis))
+            {
+                MessageBox.Show("Silakan pilih data terlebih dahulu.");
+                return;
+            }
+
+            DB.crud($@"
+            UPDATE jenis_service SET
+            nama_service = '{txtnama.Text}',
+            harga = '{txtharga.Text}',
+            stok = '{txtstok.Text}'
+            WHERE id_jenis = '{idjenis}'
+            ");
+
+            MessageBox.Show("Data berhasil diupdate.");
+
             tampildata();
+            idjenis = "";
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -107,6 +110,41 @@ namespace Service_Kendaraan
         private void Jenis_Service_Load(object sender, EventArgs e)
         {
             tampildata();
+        }
+
+        private void guna2Button3_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(idjenis))
+            {
+                MessageBox.Show("Silakan pilih data terlebih dahulu.");
+                return;
+            }
+
+            DialogResult setuju = MessageBox.Show(
+                "Apakah mau menghapus transaksi " + idjenis + "?",
+                "Pemberitahuan",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (setuju == DialogResult.Yes)
+            {
+                DB.crud($"DELETE FROM jenis_service WHERE id_jenis = '{idjenis}'");
+                MessageBox.Show("Data berhasil dihapus.");
+                tampildata();
+
+                idjenis = "";
+                label5.Text = "";
+                txtnama.Text = "";
+                txtharga.Text = "";
+                txtstok.Text = "";
+
+            }
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

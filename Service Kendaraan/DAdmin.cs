@@ -73,7 +73,7 @@ namespace Service_Kendaraan
 
         private void pnlkonten_Paint(object sender, PaintEventArgs e)
         {
-            //1
+            
         }
     }
 }

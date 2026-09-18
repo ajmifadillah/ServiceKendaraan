@@ -39,22 +39,21 @@ namespace Service_Kendaraan
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlkonten = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.pnlkonten.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnlkonten.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -125,7 +124,6 @@ namespace Service_Kendaraan
             this.panel2.Controls.Add(this.guna2Button9);
             this.panel2.Controls.Add(this.guna2Button1);
             this.panel2.Controls.Add(this.guna2Button8);
-            this.panel2.Controls.Add(this.guna2Button7);
             this.panel2.Controls.Add(this.guna2Button6);
             this.panel2.Controls.Add(this.guna2Button5);
             this.panel2.Controls.Add(this.guna2Button4);
@@ -149,7 +147,7 @@ namespace Service_Kendaraan
             this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button9.ForeColor = System.Drawing.Color.White;
             this.guna2Button9.HoverState.FillColor = System.Drawing.Color.Blue;
-            this.guna2Button9.Location = new System.Drawing.Point(3, 665);
+            this.guna2Button9.Location = new System.Drawing.Point(1, 577);
             this.guna2Button9.Name = "guna2Button9";
             this.guna2Button9.Size = new System.Drawing.Size(193, 45);
             this.guna2Button9.TabIndex = 9;
@@ -167,7 +165,7 @@ namespace Service_Kendaraan
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Blue;
-            this.guna2Button1.Location = new System.Drawing.Point(4, 595);
+            this.guna2Button1.Location = new System.Drawing.Point(4, 501);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(193, 45);
             this.guna2Button1.TabIndex = 8;
@@ -185,29 +183,12 @@ namespace Service_Kendaraan
             this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button8.ForeColor = System.Drawing.Color.White;
             this.guna2Button8.HoverState.FillColor = System.Drawing.Color.Red;
-            this.guna2Button8.Location = new System.Drawing.Point(4, 730);
+            this.guna2Button8.Location = new System.Drawing.Point(4, 645);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.Size = new System.Drawing.Size(193, 45);
             this.guna2Button8.TabIndex = 7;
             this.guna2Button8.Text = "🚪  Logout";
             this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
-            // 
-            // guna2Button7
-            // 
-            this.guna2Button7.BorderRadius = 10;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.HoverState.FillColor = System.Drawing.Color.Blue;
-            this.guna2Button7.Location = new System.Drawing.Point(4, 512);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(193, 45);
-            this.guna2Button7.TabIndex = 6;
-            this.guna2Button7.Text = "📊  Laporan";
             // 
             // guna2Button6
             // 
@@ -300,6 +281,16 @@ namespace Service_Kendaraan
             this.guna2Button2.Text = "🏠  Dashboard";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Service_Kendaraan.Properties.Resources.Screenshot_2026_07_31_152458_removebg_preview1;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(194, 88);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // pnlkonten
             // 
             this.pnlkonten.Controls.Add(this.label3);
@@ -319,16 +310,6 @@ namespace Service_Kendaraan
             this.label3.Size = new System.Drawing.Size(1063, 82);
             this.label3.TabIndex = 1;
             this.label3.Text = "Selamat Datang Admin Service";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Service_Kendaraan.Properties.Resources.Screenshot_2026_07_31_152458_removebg_preview1;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(194, 88);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // DAdmin
             // 
@@ -350,9 +331,9 @@ namespace Service_Kendaraan
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlkonten.ResumeLayout(false);
             this.pnlkonten.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -367,7 +348,6 @@ namespace Service_Kendaraan
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;

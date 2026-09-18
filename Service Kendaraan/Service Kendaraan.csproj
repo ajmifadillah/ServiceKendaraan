@@ -102,6 +102,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fstruk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fstruk.Designer.cs">
+      <DependentUpon>Fstruk.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jenis Service.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fstruk.resx">
+      <DependentUpon>Fstruk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Jenis Service.resx">
       <DependentUpon>Jenis Service.cs</DependentUpon>
@@ -329,6 +338,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Trash_50px4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motorcycle_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_48px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\768c8e26-502a-438b-9667-6e4e17a72329.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-motorcycle-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

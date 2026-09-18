@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 29, 2026 at 01:18 PM
+-- Generation Time: Sep 11, 2026 at 11:00 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -30,17 +30,17 @@ SET time_zone = "+00:00";
 CREATE TABLE `jenis_service` (
   `id_jenis` int(11) NOT NULL,
   `nama_service` varchar(50) NOT NULL,
-  `harga` int(11) NOT NULL
+  `harga` int(11) NOT NULL,
+  `stok` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `jenis_service`
 --
 
-INSERT INTO `jenis_service` (`id_jenis`, `nama_service`, `harga`) VALUES
-(1, 'Ganti Oli', 25000),
-(3, 'Ganti Lampu ', 15000),
-(6, 'Ganti Rem Cakram', 20000);
+INSERT INTO `jenis_service` (`id_jenis`, `nama_service`, `harga`, `stok`) VALUES
+(9, 'Lampu Depan', 15000, 6),
+(10, 'Lampu Belakang', 17000, 6);
 
 -- --------------------------------------------------------
 
@@ -63,7 +63,8 @@ INSERT INTO `kendaraan` (`id_kendaraan`, `plat_nomor`, `merek`, `tipe`) VALUES
 (2, 'D IUGT 87A', 'Yamaha', 'Beat'),
 (3, 'B 6UYF RF', 'Honda', 'Vario 125'),
 (7, 'D H6U J1', 'Yamaha', 'AEROX'),
-(8, 'F ER7 DG1', 'Honda', 'Beat');
+(8, 'F ER7 DG1', 'Honda', 'Beat'),
+(9, 'D 67B 3FA', 'Honda', 'Vario 150');
 
 -- --------------------------------------------------------
 
@@ -86,7 +87,9 @@ INSERT INTO `pelanggan` (`id_pelanggan`, `nama`, `no_hp`, `alamat`) VALUES
 (1, 'Agus', '85645487', 'Cimahi'),
 (2, 'Ganjar', '85944554', 'Ciamis'),
 (6, 'Yono', '0855356', 'Cimareme'),
-(7, 'Yanti', '0836756', 'Bekasi');
+(7, 'Yanti', '0836756', 'Bekasi'),
+(8, 'Ade', '083567264', 'Cimindi'),
+(9, 'Ela', '083746377', 'Ciseupan');
 
 -- --------------------------------------------------------
 
@@ -115,12 +118,23 @@ INSERT INTO `role` (`id_role`, `nama_role`) VALUES
 
 CREATE TABLE `transaksi` (
   `no_transaksi` int(11) NOT NULL,
-  `tanggal` date NOT NULL,
+  `tanggal` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `pelanggan` varchar(11) NOT NULL,
   `kendaraan` varchar(100) NOT NULL,
   `jenis_service` varchar(50) NOT NULL,
-  `biaya` int(11) NOT NULL
+  `jumlah_service` varchar(50) NOT NULL,
+  `harga` int(11) NOT NULL,
+  `total` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `transaksi`
+--
+
+INSERT INTO `transaksi` (`no_transaksi`, `tanggal`, `pelanggan`, `kendaraan`, `jenis_service`, `jumlah_service`, `harga`, `total`) VALUES
+(15, '2026-09-11 06:58:20', '8 - Ade', 'D 67B 3FA - Vario 150', 'Lampu Belakang', '3', 17000, 51000),
+(16, '2026-09-11 06:57:48', '1 - Agus', 'D IUGT 87A - Beat', 'Lampu Depan', '4', 15000, 80000),
+(17, '2026-09-11 08:29:12', '2 - Ganjar', 'D H6U J1 - AEROX', 'Lampu Depan', '3', 15000, 45000);
 
 -- --------------------------------------------------------
 
@@ -142,7 +156,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id_user`, `nama`, `username`, `password`, `role`) VALUES
 (3, 'aa', 'ajmi', '1', 'Admin'),
-(5, 'bb', 'petugas1', '1', 'Petugas');
+(5, 'bb', 'petugas1', '1', 'Petugas'),
+(6, 'Jayan', 'Jayan', '2', 'petugas');
 
 --
 -- Indexes for dumped tables
@@ -158,7 +173,8 @@ ALTER TABLE `jenis_service`
 -- Indexes for table `kendaraan`
 --
 ALTER TABLE `kendaraan`
-  ADD PRIMARY KEY (`id_kendaraan`);
+  ADD PRIMARY KEY (`id_kendaraan`),
+  ADD UNIQUE KEY `plat_nomor` (`plat_nomor`);
 
 --
 -- Indexes for table `pelanggan`
@@ -192,19 +208,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `jenis_service`
 --
 ALTER TABLE `jenis_service`
-  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `kendaraan`
 --
 ALTER TABLE `kendaraan`
-  MODIFY `id_kendaraan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_kendaraan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `id_pelanggan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_pelanggan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `role`
@@ -216,13 +232,13 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `no_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `no_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

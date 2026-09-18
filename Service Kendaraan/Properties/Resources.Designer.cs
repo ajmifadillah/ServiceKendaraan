@@ -63,6 +63,16 @@ namespace Service_Kendaraan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _768c8e26_502a_438b_9667_6e4e17a72329 {
+            get {
+                object obj = ResourceManager.GetObject("768c8e26-502a-438b-9667-6e4e17a72329", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Add_User_Male_48px {
             get {
                 object obj = ResourceManager.GetObject("Add User Male_48px", resourceCulture);
@@ -86,6 +96,16 @@ namespace Service_Kendaraan.Properties {
         internal static System.Drawing.Bitmap Cancel_48px1 {
             get {
                 object obj = ResourceManager.GetObject("Cancel_48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cancel_48px2 {
+            get {
+                object obj = ResourceManager.GetObject("Cancel_48px2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +213,16 @@ namespace Service_Kendaraan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_motorcycle_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-motorcycle-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lock_64px {
             get {
                 object obj = ResourceManager.GetObject("Lock_64px", resourceCulture);
@@ -216,6 +246,16 @@ namespace Service_Kendaraan.Properties {
         internal static System.Drawing.Bitmap Male_User_52px {
             get {
                 object obj = ResourceManager.GetObject("Male User_52px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Motorcycle_48px {
+            get {
+                object obj = ResourceManager.GetObject("Motorcycle_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

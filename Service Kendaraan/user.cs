@@ -12,6 +12,7 @@ namespace Service_Kendaraan
 {
     public partial class user : Form
     {
+        string iduser = "";
         public user()
         {
             InitializeComponent();
@@ -68,50 +69,50 @@ namespace Service_Kendaraan
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int baris = e.RowIndex;
-            int kolom = e.ColumnIndex;
-            if (kolom == 5)
-            {
-                string idu = dataGridView1.Rows[baris].Cells[0].Value.ToString();
-                DB.crud($"select * from user where id_user = '{idu}'");
-                foreach (DataRow brs in DB.ds.Tables[0].Rows)
-                {
-                    string idus = "" + brs["id_user"];
-                    string nu = "" + brs["nama"];
-                    string un = "" + brs["username"];
-                    string ps = "" + brs["password"];
-                    string ir = "" + brs["id_role"];
-                    label7.Text = idus;
-                    txtnama.Text = nu;
-                    txtuser.Text = un;
-                    txtpass.Text = ps;
-                    cmbrole.Text = ir;
-                }
-            }
-            if (kolom == 6)
-            {
-                string idu = dataGridView1.Rows[baris].Cells[0].Value.ToString();
-                DialogResult setuju = MessageBox.Show("Apakah mau dihapus? " + idu, "pemberitahuan,",
-              MessageBoxButtons.YesNo,
-              MessageBoxIcon.Question);
-                if (setuju == DialogResult.Yes)
-                {
-                    DB.crud($"delete from user where id_user = '{idu}'");
+            if (e.RowIndex < 0)
+                return;
 
-                }
-                tampildata();
+            int baris = e.RowIndex;
+            iduser = dataGridView1.Rows[baris].Cells[0].Value?.ToString();
+
+            if (string.IsNullOrEmpty(iduser))
+                return;
+            DB.crud($"SELECT * FROM user WHERE id_user = '{iduser}'");
+
+            if (DB.ds.Tables[0].Rows.Count > 0)
+            {
+                DataRow brs = DB.ds.Tables[0].Rows[0];
+
+                label7.Text = brs["id_user"].ToString();
+                txtnama.Text = brs["nama"].ToString();
+                txtuser.Text = brs["username"].ToString();
+                txtpass.Text = brs["password"].ToString();
+                cmbrole.Text = brs["role"].ToString();
+
             }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            string nu = "" + txtnama.Text;
-            string un = "" + txtuser.Text;
-            string ps = "" + txtpass.Text;
-            string ir = "" + cmbrole.Text;
-            DB.crud($"update user SET nama = '{nu}', username = '{un}', password = '{ps}', id_role = '{ir}' where id_user = '{label7.Text}'");
-            bersih();
+            if (string.IsNullOrEmpty(iduser))
+            {
+                MessageBox.Show("Silakan pilih data terlebih dahulu.");
+                return;
+            }
+
+            DB.crud($@"
+            UPDATE user SET
+            nama = '{txtnama.Text}',
+            username = '{txtuser.Text}',
+            password = '{txtpass.Text}',
+            role = '{cmbrole.Text}'
+            WHERE id_user = '{iduser}'
+            ");
+
+            MessageBox.Show("Data berhasil diupdate.");
+
             tampildata();
+            iduser = "";
         }
 
         private void guna2TextBox4_TextChanged(object sender, EventArgs e)
@@ -143,6 +144,37 @@ namespace Service_Kendaraan
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(iduser))
+            {
+                MessageBox.Show("Silakan pilih data terlebih dahulu.");
+                return;
+            }
+
+            DialogResult setuju = MessageBox.Show(
+                "Apakah mau menghapus transaksi " + iduser + "?",
+                "Pemberitahuan",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (setuju == DialogResult.Yes)
+            {
+                DB.crud($"DELETE FROM user WHERE id_user = '{iduser}'");
+                MessageBox.Show("Data berhasil dihapus.");
+                tampildata();
+
+                iduser = "";
+                label7.Text = "";
+                txtnama.Text = "";
+                txtuser.Text = "";
+                txtpass.Text = "";
+                cmbrole.Text = "";
+
+            }
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Service_Kendaraan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DPetugas());
+            Application.Run(new Form1());
         }
     }
 }
