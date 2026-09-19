@@ -39,3 +39,32 @@ C:\Users\ASUS\OneDrive\Documents\Service Kendaraan\Service Kendaraan\obj\Debug\S
 C:\Users\ASUS\OneDrive\Documents\Service Kendaraan\Service Kendaraan\obj\Debug\Service_Kendaraan.dashboardadmin.resources
 C:\Users\ASUS\OneDrive\Documents\Service Kendaraan\Service Kendaraan\obj\Debug\Service_Kendaraan.ATransaksi.resources
 C:\Users\ASUS\OneDrive\Documents\Service Kendaraan\Service Kendaraan\obj\Debug\Service_Kendaraan.Fstruk.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\bin\Debug\Service Kendaraan.exe.config
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\bin\Debug\Service Kendaraan.exe
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\bin\Debug\Service Kendaraan.pdb
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\bin\Debug\Guna.UI2.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\bin\Debug\MySql.Data.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\bin\Debug\Google.Protobuf.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\bin\Debug\MySql.Data.xml
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service Kendaraan.csprojAssemblyReference.cache
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.AKendaraan.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.ATransaksi.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.DAdmin.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.dashboardadmin.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.dashboardpetugas.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.DPelanggan.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.DPetugas.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.Form1.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.Fstruk.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.Jenis_Service.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.PKendaraan.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.PPelanggan.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.Properties.Resources.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.PTransaksi.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.role.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service_Kendaraan.user.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service Kendaraan.csproj.GenerateResource.cache
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service Kendaraan.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service Kendaraan.csproj.CopyComplete
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service Kendaraan.exe
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2 - Copy\Service Kendaraan\obj\Debug\Service Kendaraan.pdb

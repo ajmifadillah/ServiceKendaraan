@@ -223,7 +223,7 @@ namespace Service_Kendaraan
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(193, 45);
             this.guna2Button5.TabIndex = 4;
-            this.guna2Button5.Text = "🔧  Jenis Service";
+            this.guna2Button5.Text = "🔧  Barang";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2Button4
