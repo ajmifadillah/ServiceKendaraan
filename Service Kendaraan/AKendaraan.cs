@@ -26,7 +26,8 @@ namespace Service_Kendaraan
                 string nm = "" + baris["plat_nomor"];
                 string np = "" + baris["merek"];
                 string al = "" + baris["tipe"];
-                dataGridView1.Rows.Add(idp, nm, np, al);
+                string pl = "" + baris["id_pelanggan"];
+                dataGridView1.Rows.Add(idp, nm, np, al, pl);
             }
         }
 
@@ -45,7 +46,8 @@ namespace Service_Kendaraan
                 string nm = "" + baris["plat_nomor"];
                 string np = "" + baris["merek"];
                 string al = "" + baris["tipe"];
-                dataGridView1.Rows.Add(idp, nm, np, al);
+                string pl = "" + baris["id_pelanggan"];
+                dataGridView1.Rows.Add(idp, nm, np, al, pl);
             }
         }
     }

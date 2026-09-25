@@ -108,6 +108,12 @@
     <Compile Include="Fstruk.Designer.cs">
       <DependentUpon>Fstruk.cs</DependentUpon>
     </Compile>
+    <Compile Include="Jasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jasa.Designer.cs">
+      <DependentUpon>Jasa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jenis Service.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fstruk.resx">
       <DependentUpon>Fstruk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jasa.resx">
+      <DependentUpon>Jasa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Jenis Service.resx">
       <DependentUpon>Jenis Service.cs</DependentUpon>

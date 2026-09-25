@@ -26,11 +26,8 @@ namespace Service_Kendaraan
                 string nm = "" + baris["tanggal"];
                 string np = "" + baris["pelanggan"];
                 string al = "" + baris["kendaraan"];
-                string js = "" + baris["jenis_service"];
-                string jm = "" + baris["jumlah_service"];
-                string by = "" + baris["harga"];
                 string tl = "" + baris["total"];
-                dataGridView1.Rows.Add(idp, nm, np, al, js, jm, by, tl);
+                dataGridView1.Rows.Add(idp, nm, np, al, tl);
             }
         }
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -48,11 +45,8 @@ namespace Service_Kendaraan
                 string nm = "" + baris["tanggal"];
                 string np = "" + baris["pelanggan"];
                 string al = "" + baris["kendaraan"];
-                string js = "" + baris["jenis_service"];
-                string jm = "" + baris["jumlah_service"];
-                string by = "" + baris["harga"];
                 string tl = "" + baris["total"];
-                dataGridView1.Rows.Add(idp, nm, np, al, js, jm, by, tl);
+                dataGridView1.Rows.Add(idp, nm, np, al, tl);
             }
         }
     }

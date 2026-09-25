@@ -61,13 +61,13 @@ namespace Service_Kendaraan
             this.txtjumlah = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.cmbid = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbservice = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbkendaraan = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtcari = new Guna.UI2.WinForms.Guna2TextBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cmbid = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -232,6 +232,7 @@ namespace Service_Kendaraan
             // guna2Panel1
             // 
             this.guna2Panel1.BorderRadius = 15;
+            this.guna2Panel1.Controls.Add(this.cmbid);
             this.guna2Panel1.Controls.Add(this.label11);
             this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.txttotal);
@@ -247,7 +248,6 @@ namespace Service_Kendaraan
             this.guna2Panel1.Controls.Add(this.txtjumlah);
             this.guna2Panel1.Controls.Add(this.label8);
             this.guna2Panel1.Controls.Add(this.label6);
-            this.guna2Panel1.Controls.Add(this.cmbid);
             this.guna2Panel1.Controls.Add(this.cmbservice);
             this.guna2Panel1.Controls.Add(this.cmbkendaraan);
             this.guna2Panel1.Controls.Add(this.label5);
@@ -482,22 +482,6 @@ namespace Service_Kendaraan
             this.label6.TabIndex = 34;
             this.label6.Text = "Harga Barang";
             // 
-            // cmbid
-            // 
-            this.cmbid.BackColor = System.Drawing.Color.Transparent;
-            this.cmbid.BorderRadius = 12;
-            this.cmbid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbid.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbid.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbid.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbid.ItemHeight = 30;
-            this.cmbid.Location = new System.Drawing.Point(35, 105);
-            this.cmbid.Name = "cmbid";
-            this.cmbid.Size = new System.Drawing.Size(252, 36);
-            this.cmbid.TabIndex = 32;
-            // 
             // cmbservice
             // 
             this.cmbservice.BackColor = System.Drawing.Color.Transparent;
@@ -560,7 +544,6 @@ namespace Service_Kendaraan
             this.txtcari.SelectedText = "";
             this.txtcari.Size = new System.Drawing.Size(465, 46);
             this.txtcari.TabIndex = 16;
-           
             // 
             // dataGridViewImageColumn1
             // 
@@ -579,6 +562,16 @@ namespace Service_Kendaraan
             this.dataGridViewImageColumn2.MinimumWidth = 8;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 150;
+            // 
+            // cmbid
+            // 
+            this.cmbid.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbid.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbid.FormattingEnabled = true;
+            this.cmbid.Location = new System.Drawing.Point(35, 106);
+            this.cmbid.Name = "cmbid";
+            this.cmbid.Size = new System.Drawing.Size(252, 28);
+            this.cmbid.TabIndex = 54;
             // 
             // PTransaksi
             // 
@@ -607,7 +600,6 @@ namespace Service_Kendaraan
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbid;
         private Guna.UI2.WinForms.Guna2ComboBox cmbservice;
         private Guna.UI2.WinForms.Guna2ComboBox cmbkendaraan;
         private System.Windows.Forms.Label label5;
@@ -638,5 +630,6 @@ namespace Service_Kendaraan
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.ComboBox cmbid;
     }
 }

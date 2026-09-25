@@ -44,9 +44,9 @@ namespace Service_Kendaraan
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtstok = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -148,9 +148,9 @@ namespace Service_Kendaraan
             this.label4.Font = new System.Drawing.Font("Noto Sans HK", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(28, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(267, 40);
+            this.label4.Size = new System.Drawing.Size(187, 40);
             this.label4.TabIndex = 17;
-            this.label4.Text = "Data Jenis Service";
+            this.label4.Text = "Data Barang";
             // 
             // txtharga
             // 
@@ -260,26 +260,6 @@ namespace Service_Kendaraan
             this.txtstok.Size = new System.Drawing.Size(318, 60);
             this.txtstok.TabIndex = 22;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Sans HK Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(435, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 26);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Harga";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Noto Sans HK Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 77);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 26);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Nama Barang";
-            // 
             // guna2TextBox4
             // 
             this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -300,6 +280,26 @@ namespace Service_Kendaraan
             this.guna2TextBox4.Size = new System.Drawing.Size(465, 46);
             this.guna2TextBox4.TabIndex = 16;
             this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Noto Sans HK Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(435, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 26);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Harga";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Noto Sans HK Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(30, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 26);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Nama Barang";
             // 
             // dataGridViewImageColumn1
             // 

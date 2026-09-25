@@ -75,5 +75,11 @@ namespace Service_Kendaraan
         {
             
         }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            Jasa Hal3 = new Jasa() { TopLevel = false, TopMost = true };
+            KF.UntukFormMenu(Hal3, pnlkonten);
+        }
     }
 }
