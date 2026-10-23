@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using System.IO;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 namespace Service_Kendaraan
 {
     public partial class PTransaksi : Form
@@ -801,6 +804,17 @@ namespace Service_Kendaraan
         }
         private void cmbid_DropDown(object sender, EventArgs e)
         {
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            ReportDocument rpt = new ReportDocument();
+            rpt.Load("Report Transaksi.rpt");
+
+            string pdfpath = Path.Combine(Path.GetTempPath(), "Laporan_Barang.pdf");
+            rpt.ExportToDisk(ExportFormatType.PortableDocFormat, pdfpath);
+
+            System.Diagnostics.Process.Start(pdfpath);
         }
     }
 }

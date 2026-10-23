@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 19, 2026 at 10:05 AM
+-- Generation Time: Oct 23, 2026 at 09:02 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -45,9 +45,10 @@ CREATE TABLE `detail_transaksi` (
 INSERT INTO `detail_transaksi` (`id_detail`, `no_transaksi`, `jenis_service`, `jasa`, `jumlah`, `harga_service`, `harga_jasa`, `subtotal`) VALUES
 (15, 34, 'Lampu Depan', 'Jasa Pasang Lampu', 3, 20000.00, 15000.00, 105000.00),
 (16, 35, 'Oli Gardan', 'Jasa Ganti Oli', 4, 25000.00, 10000.00, 140000.00),
-(17, 36, '10', '4', 5, 17000.00, 15000.00, 160000.00),
-(18, 37, '10', '4', 2, 17000.00, 15000.00, 64000.00),
-(19, 37, '12', '1', 2, 25000.00, 10000.00, 70000.00);
+(24, 40, '10', '1', 7, 17000.00, 10000.00, 129000.00),
+(25, 41, '12', '1', 1, 25000.00, 10000.00, 35000.00),
+(27, 42, '10', '4', 1, 17000.00, 15000.00, 32000.00),
+(30, 44, '9', '6', 1, 20000.00, 5000.00, 25000.00);
 
 -- --------------------------------------------------------
 
@@ -66,10 +67,8 @@ CREATE TABLE `jasa` (
 --
 
 INSERT INTO `jasa` (`id_jasa`, `nama_jasa`, `harga_jasa`) VALUES
-(1, 'Jasa Ganti Oli', 10000.00),
-(2, 'Jasa Servis Rem', 25000.00),
-(3, 'Jasa Tune Up', 30000.00),
-(4, 'Jasa Pasang Lampu', 15000.00);
+(5, 'Ganti Oli', 10000.00),
+(6, 'Ganti Lampu', 5000.00);
 
 -- --------------------------------------------------------
 
@@ -89,9 +88,8 @@ CREATE TABLE `jenis_service` (
 --
 
 INSERT INTO `jenis_service` (`id_jenis`, `nama_service`, `harga`, `stok`) VALUES
-(9, 'Lampu Depan', 20000, 50),
-(10, 'Lampu Belakang', 17000, 48),
-(12, 'Oli Gardan', 25000, 48);
+(9, 'Lampu', 20000, 53),
+(13, 'Oli', 30000, 50);
 
 -- --------------------------------------------------------
 
@@ -114,7 +112,8 @@ CREATE TABLE `kendaraan` (
 INSERT INTO `kendaraan` (`id_kendaraan`, `plat_nomor`, `merek`, `tipe`, `id_pelanggan`) VALUES
 (15, 'D 56J 5F', 'HONDA', 'BEAT', 15),
 (16, 'F YU6 78G', 'HONDA', 'VARIO', 16),
-(17, 'D 45G JU7', 'HONDA', 'BEAT', 17);
+(17, 'D 45G JU7', 'HONDA', 'BEAT', 17),
+(18, 'D 5GY 3T', 'HONDA', 'NMAX', 18);
 
 -- --------------------------------------------------------
 
@@ -135,8 +134,8 @@ CREATE TABLE `pelanggan` (
 
 INSERT INTO `pelanggan` (`id_pelanggan`, `nama`, `no_hp`, `alamat`) VALUES
 (15, 'Arya', '08272662627', 'Cisangkan'),
-(16, 'Hendra', '086326362', 'Cianjur'),
-(17, 'Gaza', '083746373', 'Melong');
+(17, 'Gaza', '083746373', 'Melong'),
+(18, 'Nazran', '087262626', 'Cibeber');
 
 -- --------------------------------------------------------
 
@@ -178,8 +177,10 @@ CREATE TABLE `transaksi` (
 INSERT INTO `transaksi` (`no_transaksi`, `tanggal`, `pelanggan`, `kendaraan`, `total`) VALUES
 (34, '2026-09-18 17:00:00', '15 - Arya', 'D 56J 5F - BEAT', 105000),
 (35, '2026-09-19 07:35:39', '16 - Hendra', 'F YU6 78G - VARIO', 140000),
-(36, '2026-09-18 17:00:00', 'Arya', 'D 56J 5F - BEAT', 160000),
-(37, '2026-09-18 17:00:00', 'Gaza', 'D 45G JU7 - BEAT', 134000);
+(40, '2026-09-24 17:00:00', '15 - Arya', 'D 56J 5F - BEAT', 129000),
+(41, '2026-09-24 17:00:00', '16 - Hendra', 'F YU6 78G - VARIO', 90000),
+(42, '2026-09-24 17:00:00', 'Gaza', 'D 45G JU7 - BEAT', 87000),
+(44, '2026-09-24 17:00:00', 'Gaza', 'D 45G JU7 - BEAT', 25000);
 
 -- --------------------------------------------------------
 
@@ -211,7 +212,8 @@ INSERT INTO `user` (`id_user`, `nama`, `username`, `password`, `role`) VALUES
 -- Indexes for table `detail_transaksi`
 --
 ALTER TABLE `detail_transaksi`
-  ADD PRIMARY KEY (`id_detail`);
+  ADD PRIMARY KEY (`id_detail`),
+  ADD UNIQUE KEY `no_transaksi` (`no_transaksi`);
 
 --
 -- Indexes for table `jasa`
@@ -264,31 +266,31 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `detail_transaksi`
 --
 ALTER TABLE `detail_transaksi`
-  MODIFY `id_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `jasa`
 --
 ALTER TABLE `jasa`
-  MODIFY `id_jasa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_jasa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `jenis_service`
 --
 ALTER TABLE `jenis_service`
-  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `kendaraan`
 --
 ALTER TABLE `kendaraan`
-  MODIFY `id_kendaraan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_kendaraan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `id_pelanggan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_pelanggan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `role`
@@ -300,13 +302,23 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `no_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `no_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `detail_transaksi`
+--
+ALTER TABLE `detail_transaksi`
+  ADD CONSTRAINT `detail_transaksi_ibfk_1` FOREIGN KEY (`no_transaksi`) REFERENCES `transaksi` (`no_transaksi`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using System.IO;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace Service_Kendaraan
 {
@@ -248,6 +251,17 @@ namespace Service_Kendaraan
         private void cmbPelanggan_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            ReportDocument rpt = new ReportDocument();
+            rpt.Load("Laporan data barang.rpt");
+
+            string pdfpath = Path.Combine(Path.GetTempPath(), "Laporan_Barang.pfd");
+            rpt.ExportToDisk(ExportFormatType.PortableDocFormat, pdfpath);
+
+            System.Diagnostics.Process.Start(pdfpath);
         }
     }
 }

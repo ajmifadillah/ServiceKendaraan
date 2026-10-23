@@ -98,3 +98,134 @@ C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\obj\Debug\
 C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\obj\Debug\Service Kendaraan.exe
 C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\obj\Debug\Service Kendaraan.pdb
 C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.Jasa.resources
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\log4net.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\log4net.xml
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\cs\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\da\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\de\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\en\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\es\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\fi\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\fr\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\hu\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\it\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\ja\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\ko\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\nb-NO\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\nl\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\pl\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\pt\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\ru\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\sk\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\sv\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\th\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\tr\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\zh-CHS\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\zh-CHT\CrystalDecisions.CrystalReports.Engine.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\cs\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\da\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\de\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\en\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\es\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\fi\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\fr\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\hu\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\it\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\ja\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\ko\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\nb-NO\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\nl\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\pl\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\pt\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\ru\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\sk\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\sv\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\th\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\tr\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\zh-CHS\CrystalDecisions.Shared.resources.dll
+C:\Users\ASUS\OneDrive\Documents\Service Kendaraan2\Service Kendaraan\bin\Debug\zh-CHT\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service Kendaraan.csprojAssemblyReference.cache
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.AKendaraan.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.ATransaksi.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.DAdmin.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.dashboardadmin.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.dashboardpetugas.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.DPelanggan.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.DPetugas.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.Form1.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.Freport.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.Fstruk.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.Jasa.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.Jenis_Service.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.PKendaraan.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.PPelanggan.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.Properties.Resources.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.PTransaksi.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.role.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service_Kendaraan.user.resources
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service Kendaraan.csproj.GenerateResource.cache
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service Kendaraan.csproj.CoreCompileInputs.cache
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service Kendaraan.exe
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service Kendaraan.pdb
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\Service Kendaraan.exe.config
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\Service Kendaraan.exe
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\Service Kendaraan.pdb
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\CrystalDecisions.Shared.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\Guna.UI2.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\log4net.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\MySql.Data.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\Google.Protobuf.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\log4net.xml
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\MySql.Data.xml
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\cs\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\da\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\de\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\en\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\es\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\fi\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\fr\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\hu\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\it\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\ja\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\ko\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\nb-NO\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\nl\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\pl\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\pt\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\ru\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\sk\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\sv\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\th\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\tr\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\zh-CHS\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\zh-CHT\CrystalDecisions.CrystalReports.Engine.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\cs\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\da\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\de\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\en\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\es\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\fi\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\fr\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\hu\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\it\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\ja\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\ko\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\nb-NO\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\nl\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\pl\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\pt\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\ru\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\sk\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\sv\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\th\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\tr\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\zh-CHS\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\bin\Debug\zh-CHT\CrystalDecisions.Shared.resources.dll
+F:\Azmi\AJMI FOLDER\Dekstop\Service Kendaraan2\Service Kendaraan\obj\Debug\Service Kendaraan.csproj.CopyComplete

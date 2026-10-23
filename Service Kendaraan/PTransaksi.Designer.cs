@@ -46,6 +46,7 @@ namespace Service_Kendaraan
             this.label7 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cmbid = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txttotal = new Guna.UI2.WinForms.Guna2TextBox();
@@ -67,7 +68,7 @@ namespace Service_Kendaraan
             this.txtcari = new Guna.UI2.WinForms.Guna2TextBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.cmbid = new System.Windows.Forms.ComboBox();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -232,6 +233,7 @@ namespace Service_Kendaraan
             // guna2Panel1
             // 
             this.guna2Panel1.BorderRadius = 15;
+            this.guna2Panel1.Controls.Add(this.guna2Button5);
             this.guna2Panel1.Controls.Add(this.cmbid);
             this.guna2Panel1.Controls.Add(this.label11);
             this.guna2Panel1.Controls.Add(this.label9);
@@ -261,6 +263,16 @@ namespace Service_Kendaraan
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1890, 491);
             this.guna2Panel1.TabIndex = 7;
+            // 
+            // cmbid
+            // 
+            this.cmbid.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbid.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbid.FormattingEnabled = true;
+            this.cmbid.Location = new System.Drawing.Point(35, 106);
+            this.cmbid.Name = "cmbid";
+            this.cmbid.Size = new System.Drawing.Size(252, 28);
+            this.cmbid.TabIndex = 54;
             // 
             // label11
             // 
@@ -563,15 +575,22 @@ namespace Service_Kendaraan
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 150;
             // 
-            // cmbid
+            // guna2Button5
             // 
-            this.cmbid.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cmbid.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbid.FormattingEnabled = true;
-            this.cmbid.Location = new System.Drawing.Point(35, 106);
-            this.cmbid.Name = "cmbid";
-            this.cmbid.Size = new System.Drawing.Size(252, 28);
-            this.cmbid.TabIndex = 54;
+            this.guna2Button5.BorderRadius = 10;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.Color.Red;
+            this.guna2Button5.Font = new System.Drawing.Font("Noto Sans HK Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.Location = new System.Drawing.Point(1354, 428);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Size = new System.Drawing.Size(174, 45);
+            this.guna2Button5.TabIndex = 55;
+            this.guna2Button5.Text = "Cetak";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // PTransaksi
             // 
@@ -631,5 +650,6 @@ namespace Service_Kendaraan
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.ComboBox cmbid;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
     }
 }
